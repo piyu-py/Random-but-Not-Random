@@ -67,7 +67,7 @@ function App() {
       }}
     >
       <div
-        className="px-15 pb-5 container rounded-3xl"
+        className="md:px-15 pb-5 container rounded-3xl"
         style={spin ^ reset ? {} : { boxShadow: `0px 0px 5px 5px ${color}` }}
       >
         <p className="text-7xl pointer">🔻</p>
@@ -93,8 +93,6 @@ function App() {
               maintainAspectRatio: false,
               responsive: true,
             }}
-            width={400}
-            height={400}
           />
         </div>
         <button
