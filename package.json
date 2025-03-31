@@ -1,5 +1,6 @@
 {
   "name": "colorwheel",
+  "homepage": "https://piyu-py.github.io/Random-but-Not-Random",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deplay": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
     "chart.js": "^4.4.8",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
