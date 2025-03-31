@@ -67,12 +67,12 @@ function App() {
       }}
     >
       <div
-        className="md:px-15 pb-5 container rounded-3xl"
+        className="md:px-15 px-3 pb-5 container rounded-3xl"
         style={spin ^ reset ? {} : { boxShadow: `0px 0px 5px 5px ${color}` }}
       >
         <p className="text-7xl pointer">🔻</p>
         <div
-          className="mb-10"
+          className="mb-10 md:w-md"
           style={{
             transform: `rotate(${angle}deg)`,
             transition: "transform 2s ease-out",
@@ -90,7 +90,7 @@ function App() {
               ],
             }}
             options={{
-              maintainAspectRatio: false,
+              maintainAspectRatio: true,
               responsive: true,
             }}
           />
