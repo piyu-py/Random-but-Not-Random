@@ -1,1 +1,1 @@
-A color wheel to divide teams while keeping the number of participants same on every team.
+A color wheel that "randomly" assigns participants to teams, ensuring that each team has an equal number of members.
