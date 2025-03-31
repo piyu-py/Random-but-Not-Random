@@ -29,8 +29,6 @@ function App() {
 
   const randomAngle = () => {
     const angleId = Math.floor(Math.random() * colorAngles.length);
-    console.log(angleId);
-    console.log(colors);
     const newAngle = colorAngles[angleId] + 360 * 3;
     setAngle(newAngle);
     setTimeout(() => {
