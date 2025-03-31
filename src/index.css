@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+  /* #3c3434; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+#root {
+  text-align: center;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  background-color: #1e1e1e;
+}
+
+@keyframes rotateGradient {
+  0% {
+    background: conic-gradient(from 0deg, red, yellow, green, blue, red);
+  }
+  12.5% {
+    background: conic-gradient(from 45deg, red, yellow, green, blue, red);
+  }
+  25% {
+    background: conic-gradient(from 90deg, red, yellow, green, blue, red);
+  }
+  37.5% {
+    background: conic-gradient(from 135deg, red, yellow, green, blue, red);
+  }
+  50% {
+    background: conic-gradient(from 180deg, red, yellow, green, blue, red);
+  }
+  62.5% {
+    background: conic-gradient(from 225deg, red, yellow, green, blue, red);
+  }
+  75% {
+    background: conic-gradient(from 270deg, red, yellow, green, blue, red);
+  }
+  87.5% {
+    background: conic-gradient(from 315deg, red, yellow, green, blue, red);
+  }
+  100% {
+    background: conic-gradient(from 360deg, red, yellow, green, blue, red);
+  }
+}
