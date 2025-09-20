@@ -6,21 +6,19 @@ import { Pie } from "react-chartjs-2";
 ChartJS.register(ArcElement);
 
 const colorlist = [
-  "#Fc143C",
-  "#FF6600",
-  "#FFD700",
-  "#fffd8d",
-  "#00C853",
-  "#66FF66",
-  "#0026FF",
-  "#00CFFF",
-  "#DE73FF",
-  "#FF1493",
+  "#eab100", // Deep Red
+  "#3EC70B", // Deep Yellow/Golden
+  "#3B44F6", // Deep Green
+  "#A149FA", // Deep Bluefdb515
+  "#eab100", // Deep Red
+  "#3EC70B", // Deep Yellow/Golden
+  "#3B44F6", // Deep Green
+  "#A149FA",
 ];
 function App() {
   const [colorAngles, setColorAngles] = useState([
-    18, 54, 90, 126, 162, 198, 234, 270, 306, 342,
-  ]);
+    22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5,
+  ]); //[22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5],[45, 135, 225, 315]
   const [colors, setColors] = useState([...colorlist].reverse());
   const [spin, setSpin] = useState(false);
   const [reset, setReset] = useState(false);
@@ -35,7 +33,7 @@ function App() {
       setColor(colors[angleId]);
       setReset(true);
       if (colorAngles.length === 1) {
-        setColorAngles([18, 54, 90, 126, 162, 198, 234, 270, 306, 342]);
+        setColorAngles([22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5]);
         setColors([...colorlist].reverse());
       } else {
         setColorAngles((prev) => prev.filter((_, index) => index !== angleId));
